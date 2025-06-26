@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Page 2</title>
 </head>
 <body>
-    <h1><marquee>This is page 2, my G</marquee></h1>
+    <h1>This is Page 2, my G</h1>
     <h3>Try and click the images for fun <sub>little</sub> <sup>surprises</sup> ^_^</h3>
     <!--typical desktop screen width (pixels): 1200-1440, height: 1920?-->
-    
-    <marquee>
-        <audio loop autoplay controls id="1"
-        src="Multimedia/[MV] I.O.I(아이오아이) _ Very Very Very(너무너무너무).mp3">
-        </audio>
-
+        <marquee scrollamount="20" behavior="alternate">
+            <p>Try to catch the audio controls!</p>
+        </marquee>
+        <marquee scrollamount="60" behavior="alternate">
+            <audio loop autoplay controls id="1" src="Multimedia/[MV] I.O.I(아이오아이) _ Very Very Very(너무너무너무).mp3">
+            </audio>
+        </marquee>
     <!--I'm tryna control the default audio-->
-    <script>
-    const audio = document.getElementById("1");
-    audio.volume = .4; // 0.0 (mute) to 1.0 (full volume)
-    </script>
-    </marquee>
-<br>
-    <a href="https://www.youtube.com/watch?v=qipqAibRcyQ&list=PL8GV1GOoRM5Z-bR-LnCo7UTqx0dFHe9dE&index=218"
-    target=_blank>
-        <img src="Multimedia/Tiger Flag 4.3b.png" 
-        width="680" alt="Tiger Power! slogan" title="Tigerrr Power!! slogan">
-    </a>
-<br>
-    <a href="Multimedia/aespa cry.gif" target="_blank">
-        <img src="Multimedia/aespa lips.gif" 
-        width="680" alt="Karina looking cute" title="Karina looking cute">
-    </a>
-
-    <a href="Multimedia/aespa sob.gif" target="_blank">
-        <img src="Multimedia/aespa nothingness.gif" 
-        height="804"alt="Karina looking cute" title="Karina looking cute">
-    </a>
-
-    
-
-
-    </audio>
+            <script>
+            const audio = document.getElementById("1");
+            audio.volume = .15; // 0.0 (mute) to 1.0 (full volume)
+            </script>        
+        <a href="https://www.youtube.com/watch?v=qipqAibRcyQ&list=PL8GV1GOoRM5Z-bR-LnCo7UTqx0dFHe9dE&index=218" target=_blank>
+            <img src="Multimedia/Tiger Flag 4.3b.png" width="680" alt="Tiger Power! slogan" title="Tigerrr Power!! slogan">
+        </a>
+        <!--the iframe element allows you to embed content from another source-->
+        <iframe width="600" height="444" src="https://www.youtube.com/embed/zdNRYaIFzuA?si=Qn3EPsohAskrEwqY" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+        <br>
+        <a href="Multimedia/aespa cry.gif" target="_blank">
+            <img src="Multimedia/aespa lips.gif" width="680" alt="Karina looking cute" title="Karina looking cute">
+        </a>
+        <a href="Multimedia/aespa sob.gif" target="_blank">
+            <img src="Multimedia/aespa nothingness.gif" height="804"alt="Karina looking cute" title="Karina looking cute">
+        </a>
 </body>
 </html>
